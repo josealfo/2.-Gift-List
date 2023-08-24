@@ -1,15 +1,14 @@
 This is an app aimed to learn blockchain developement. We use Merkle Trees and cryptography to authenticate a user: if the user is on the list, a gift will be given. Otherwise not.
 
 The app is in text, using the console. It consists of a server and a client who both have to be run:
-   The server by typing:  `node server/index`.  from the command line.
-   And once the server is up, the client can be started by typing:  `node client/index` (also from the command line in another terminal or window).
+- The server by typing:  `node server/index`.  from the command line.
+- And once the server is up, the client can be started by typing:  `node client/index` (also from the command line in another terminal or window).
 
-This will start a process, first in the client generating names and proofs that will be sent for verification...
-     The following attemps will be made:
-     1) A name which is not in the list
-     2) A name which is on the list, wth a proof that does not verify
-     3) A name which is on the list with a valid proof. I manually altered the list, adding this nane!
-     4) Another name which is on the list, and his valid proof (also receiving a gift)
+This will start a process, first in the client generating names and proofs that will be sent for verification... The following attemps will be made:
+   1. A name which is not in the list
+   2. A name which is on the list, wth a proof that does not verify
+   3. A name which is on the list with a valid proof. I manually altered the list, adding this nane!
+   4. Another name which is on the list, and his valid proof (also receiving a gift)
 
 The output will be shown on the screen and the user will see that the first two attempts failed, and the last two succeded. The list of names is in utils/niceList.json, and the implementation of the MerkleTree is in utils/MerkleTree.js. I used this class, as seen in utils/example.js to load a Merkle Tree of the altereed niceList.json and got a root. Instead of storing the whole list, we only store this tree's root (which is a hash), saving much space.
 
