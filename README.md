@@ -10,7 +10,7 @@ This will start a process, first in the client generating names and proofs that 
    3. A name which is on the list with a valid proof. I manually altered the list, adding this nane!
    4. Another name which is on the list, and his valid proof (also receiving a gift)
 
-The output will be shown on the screen and the user will see that the first two attempts failed, and the last two succeded. The list of names is in utils/niceList.json, and the implementation of the MerkleTree is in utils/MerkleTree.js. I used this class, as seen in utils/example.js to load a Merkle Tree of the altereed niceList.json and got a root. Instead of storing the whole list, we only store this tree's root (which is a hash), saving much space.
+The output will be shown on the screen and the user will see that the first two attempts failed, and the last two succeded. The list of names is in `utils/niceList.json`, and the implementation of the MerkleTree is in `utils/MerkleTree.js`. I used this class, as seen in `utils/example.js` to load a Merkle Tree of the altereed niceList.json and got a root. Instead of storing the whole list, we only store this tree's root (which is a hash), saving much space.
 
 Following is the previous README.md, in case I forgot something:
 
