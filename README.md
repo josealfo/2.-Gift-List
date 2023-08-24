@@ -1,6 +1,6 @@
 This is an app aimed to learn blockchain developement. We use Merkle Trees and cryptography to authenticate a user: if the user is on the list, a gift will be given. Otherwise not.
 
-It consists of a server and a client who both have to be run:
+The app is in text, using the console. It consists of a server and a client who both have to be run:
    The server by typing:  `node server/index`.  from the command line.
    And once the server is up, the client can be started by typing:  `node client/index` (also from the command line in another terminal or window).
 
